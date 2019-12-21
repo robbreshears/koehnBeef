@@ -3,9 +3,10 @@
 <head>
 	<title>Koehn Beef</title>
 	<meta charset="utf-8">
-	<meta="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.png/"
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -49,7 +50,7 @@
 			<div class="col-sm-4">
 				<h1 id="koehn">Koehn Beef</h1>
 				<br>
-				<h3>Grass-Fed / Grass-Finished<br>All Natural</h3>
+				<h3>Grass-Fed / Grass-Finished<br>All Natural / 100% Angus</h3>
       		</div> 
 			<div class="col-sm-4"></div>
 		</div>
@@ -61,11 +62,29 @@
 	<div class="row">
 		<div class="col-sm-8">
 			<h2>About Koehn Beef</h2>
-			  <h4>We take the time and care to hand raise our grass-fed cattle.  With no hormones or antibitoics, our 90%+ lean beef is grass-finished and all natural.  The taste, health benefits and delivery set us apart.  Raised right here in Fort Collins, Colorado.<br><br>Contact us today to start your order</h4><br>
-			  
-			  <a href="#contact">
-			  	<button class="btn btn-default btn-lg orange">Contact</button>
-			  </a>
+			  <h4>We take the time and care to hand raise our Angus grass-fed cattle.  With no hormones or antibitoics, our 90%+ lean beef is grass-finished and all natural.  The taste, health benefits and delivery set us apart.  Raised right here in Fort Collins, Colorado.</h4><br>
+			<div class="row">
+				<div class="col-sm-4">
+			 		<h4>Contact us today to start your order.</h4>
+			 	<!--</div>
+			 	<div class="col-sm-2">-->
+			 		<a href="#contact">
+			  			<button class="btn btn-default btn-lg orange">Contact</button>
+			  		</a>
+			  	</div>
+			 </div>
+			 <br>
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>Learn more on Facebook.</h4>
+				<!--</div>
+				<div class="col-sm-2">-->
+			  		<a href="https://www.facebook.com/Koehn-Beef-329060107942316/">
+			  			<img src="facebook.png" alt="facebook logo" style="width: 50px">
+			  		</a>
+			  	</div>
+			</div>
+
 		</div>
 		<div class="col-sm-4 orange quote">
 			<blockquote>
@@ -122,8 +141,8 @@
 <!--Reviews-->
 <div class="container-fluid text-center bg-grey">
 	<blockquote class="blockquote text-center">
-  		<h3 class="mb-0">"This was the best purchase my family has ever made.  We can't wait to order again."</h3>
-  		<footer class="blockquote-footer"><cite title="Source Title">Elated Customer</cite></footer>
+  		<h3 class="mb-0">Grass Fed.  Grass Finished.  100% Angus.</h3>
+  		<footer class="blockquote-footer"><cite title="Source Title">Koehn Beef</cite></footer>
 	</blockquote>
 </div>
 
@@ -135,7 +154,7 @@
 			<div class="row">
 				<div class="col-sm-6text-center">
 					<p><span class="glyphicon glyphicon-star"></span>Free delivery to your door or to a drop-off location within a 30 mile radius of Fort Collins.</p>
-					<p><span class="glyphicon glyphicon-star"></span>$100 deposit required for each package.  We accept cash and credit card</p>
+					<p><span class="glyphicon glyphicon-star"></span>$100 deposit required for each package.  We accept cash,  Visa and Mastercard</p>
 					<p><span class="glyphicon glyphicon-star"></span>All pricing includes meat processing and is based on approximate weight of animal.</p><br>
 				</div>
 			</div>
@@ -190,11 +209,11 @@
           			<p><strong>~$1560</strong> Total</p>
           			<p>Payment due upon delivery</p>
          			<p><strong>OR</strong></p>
-          			<p>3 monthly payments<br> prior to delivery</p>
+          			<p>3 monthly payments<br> *May not split into quarter shares*</p>
         		</div>
         		<div class="panel-footer">
           			<h3>$5.20</h3>
-          			<h4>per hanging weight lb</h4>          		
+          			<h4>per hanging weight lb</h4>       		
         		</div>
       		</div> 
     	</div> 
@@ -213,20 +232,33 @@
     </div>
     <div class="col-sm-7">
       <div class="row">
-      	<form action="https://mailthis.to/rob.campfire5@gmail.com">
+      	<form action="https://formspree.io/koehnbeef@gmail.com" method="POST">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="From" placeholder="Your Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="email" name="Email" placeholder="Your Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Let us know what we can do for you and the best time to contact you." rows="5"></textarea><br>
+      <div class="row">
+      	<div class="col-sm-6 form-group">
+      		<input class="form-control" id="phone" name="Phone" placeholder="Your Phone Number" type="text">
+      	</div>
+      	<div class="col-sm-6 form-group">
+          <select class="form-control" id="time" name="Best Time To Contact">
+          	<option value="morning">Morning is the best time to contact me</option>
+          	<option value="afternoon">Afternoon is the best time to contact me</option>
+          	<option value="evening">Evening is the best time to contact me</option>
+          	<option value="anytime">Anytime is the best time to contact me</option>
+          </select>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="Message" placeholder="Let us know what we can do for you." rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
-      </div> 
+      </div>
     </div>
 	</form>
   </div>
@@ -289,7 +321,7 @@
 	<div class="row faq">
 		<h4><span class="glyphicon glyphicon-star"></span>   How does the price for 1/8 or 1/4 of a beef compare with the price in the grocery store?</h4>
 		<br>			
-		<p>The average cost for grass-fed beef in the grocery store is $5.99/lb for ground beef.  Our beef is approximately $7.25/lb and includes steaks, roasts, and ground beef.</p>
+		<p>The average cost for grass-fed beef in the grocery store is $5.99/lb for ground beef.  Other cuts range from $9.99 to $19.99 per pound.  Our beef is approximately $7.25/lb and includes steaks, roasts, and ground beef.</p>
 	</div>
 </div>
 
@@ -329,6 +361,7 @@ $(document).ready(function(){
   });
 })
 </script>
+
 
 
 </body>
